@@ -1,8 +1,7 @@
 # Table of Content
-1. Compile the code
-2. Burn the firmware to microcontroller
-3. Install driver for amplifier
-4. Data transmission protocol
+1. [Compile the code]
+2. [Burn the firmware to microcontroller]
+3. [Driver for the microcontroller and data transmission protocol]
 
 # Compile the code
 ## Environment setup
@@ -207,13 +206,15 @@ openocd -s "C:\Program Files\xpack-openocd-0.12.0-4-win32-x64\scripts" -f openoc
 
 Hit `Enter` and the program will be flashed to the microcontroller.
 
-# Install driver for amplifier
+# Driver for the microcontroller and data transmission protocol
+
+## Install driver for microcontroller
 
 install the [STM32 Virtual COM Port Driver](https://www.st.com/en/development-tools/stsw-stm32102.html).
 
 After you install the driver, COM device or serial port device will show when the amplifier board is plugged to your computer through the microUSB port.
 
-# Communication protocol
+## Communication protocol
 
 The microcontroller encodes the analog reading and system time to a 11 byte package. The first 5 bytes are for analog reading data and last 5 bytes are for time. The last byte is a `0xFF` byte for frame check. 
 
