@@ -1,4 +1,6 @@
 # Table of Content
+Please follow the instructions to program the microcontroller and learn about the communication protocol.
+
 1. [Compile the code]
 2. [Burn the firmware to microcontroller]
 3. [Driver for the microcontroller and data transmission protocol]
@@ -204,7 +206,7 @@ If you completely follows the previous instruction, the final command is most li
 openocd -s "C:\Program Files\xpack-openocd-0.12.0-4-win32-x64\scripts" -f openocd.cfg -c "tcl_port disabled" -c "gdb_port disabled" -c "tcl_port disabled" -c "program 'cmake\Firmware.elf'" -c reset -c shutdown
 ```
 
-Hit `Enter` and the program will be flashed to the microcontroller.
+Under the `Firmware` folder, hit `Enter` and the program will be flashed to the microcontroller.
 
 # Driver for the microcontroller and data transmission protocol
 
